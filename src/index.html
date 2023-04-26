@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <header> 
+    <h1>Bienvenid@</h1>
+   </header>
+    <h2>PAGO DE SERVICIOS PUBLICOS</h2>
+
+ <main class="princi">
+  <div class="card">
+  <div class="cardFront">
+      <img src="cardfront.png" alt="frente tarjeta">
+      <div class="cardfront_data">
+        <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+        <div class="card-name-date">
+        <p class="card-name" id="card-name">JAne Brunch</p>
+        <p class="card-date"><span id="card-month">00</span>/<span id="card-year">00</span></p>
+                  </div>
+                </div>
+              </div>
+                   
+
+       <div class="cardBack">
+      <img src="cardback.png" alt="dorso tarjeta">
+    <div class="cardback_data">
+      <p class="card-cvc" id="card-cvc">0000</p>
+    </div>  
+    </div>
+</div>
+
+
+<section>
+  <h4>Información de la tarjeta</h4>
+
+<div class="form-group">
+  <label for="inputName">Nombre Titular</label>
+    <input type ="text" class="input" id="inputName" placeholder="Nombre Titular" required>
+            </div>
+<br>
+
+<div class="form-group">
+  <label for="inputNumber">Número de Tarjeta</label>
+    <input type="number" id="inputNumber" class="input" placeholder="Numero de Tarjeta" maxlength="18" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+            </div>  
+<br>
+
+<div class="form-group">
+  <div>
+    <label for="input-date">Valida Hasta(MM/YY)</label>            
+  <div>         
+    <input type="text" class="input" id="inputMonth" pattern="\d*" maxlength="2" placeholder="MM" required> /
+    <input type="text" class="input" id="inputYear" pattern="\d*" maxlength="2" placeholder="YY" required>
+              </div>
+              </div>
+              <div>
+  <label for="inputCvc">CVC</label>
+    <input type="text" class="input" id="inputCvc" placeholder="CVC" pattern="\d*" maxlength="4" required>
+              </div>
+<div class="form-group">
+      <button class="button" id="confirm">Confirmar</button>
+              </div>
+              </div>
+              
+</section>
+    </main>
+    <!-- <input type="submit" value="Confirmar" id="btnpay" /> -->
+    <script src="index.js" type="module"></script>
+  </body>
+  <footer>Copyright 2023  All rights reserved</footer>
+  </html>
